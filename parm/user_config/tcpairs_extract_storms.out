@@ -1,0 +1,744 @@
+Running METplus 4.0.0-beta3-dev
+Starting METplus v4.0.0-beta3-dev
+01/27 12:48:26.568 metplus (config_metplus.py:121) INFO: Starting METplus configuration setup.
+01/27 12:48:26.575 metplus (config_metplus.py:249) INFO: /d1/personal/arbetter/METplus/parm/metplus_config/metplus_system.conf: Parsed this file
+01/27 12:48:26.585 metplus (config_metplus.py:249) INFO: /d1/personal/arbetter/METplus/parm/metplus_config/metplus_data.conf: Parsed this file
+01/27 12:48:26.595 metplus (config_metplus.py:249) INFO: /d1/personal/arbetter/METplus/parm/metplus_config/metplus_runtime.conf: Parsed this file
+01/27 12:48:26.604 metplus (config_metplus.py:249) INFO: /d1/personal/arbetter/METplus/parm/metplus_config/metplus_logging.conf: Parsed this file
+01/27 12:48:26.605 metplus (config_metplus.py:249) INFO: TCPairs_extra_tropical.conf: Parsed this file
+01/27 12:48:26.614 metplus (config_metplus.py:249) INFO: ArbetterKiowa.conf: Parsed this file
+01/27 12:48:26.616 metplus (config_metplus.py:438) INFO: Adding: config.LOG_TIMESTAMP='20210127124826'
+01/27 12:48:26.616 metplus (config_metplus.py:444) INFO: Replace [config] LOG_METPLUS with '/d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826'
+01/27 12:48:26.616 metplus (config_metplus.py:723) DEBUG: Setting [config] METPLUS_BASE to default value (/d1/personal/arbetter/METplus)
+01/27 12:48:26.616 metplus (config_metplus.py:723) DEBUG: Setting [config] PARM_BASE to default value (/d1/personal/arbetter/METplus/parm)
+01/27 12:48:26.617 metplus (config_metplus.py:316) INFO: Setting [dir] METPLUS_BASE to /d1/personal/arbetter/METplus
+01/27 12:48:26.617 metplus (config_metplus.py:316) INFO: Setting [dir] PARM_BASE to /d1/personal/arbetter/METplus/parm
+01/27 12:48:26.617 metplus (config_metplus.py:323) INFO: METPLUS_CONF: /d1/personal/arbetter/METplus/output/metplus_final.conf written here.
+01/27 12:48:26.617 metplus (config_metplus.py:141) INFO: Completed METplus configuration setup.
+01/27 12:48:26.617 metplus (met_util.py:101) INFO: Running METplus v4.0.0-beta3-dev called with command: /d1/personal/arbetter/METplus/ush/master_metplus.py -c TCPairs_extra_tropical.conf -c ArbetterKiowa.conf
+01/27 12:48:26.617 metplus (met_util.py:103) INFO: Log file: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:26.623 metplus (met_util.py:680) DEBUG: Checking for deprecated environment variables in: /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped
+01/27 12:48:26.625 metplus (config_metplus.py:723) DEBUG: Setting [config] USER_SHELL to default value (bash)
+01/27 12:48:26.625 metplus (config_metplus.py:723) DEBUG: Setting [config] DO_NOT_RUN_EXE to default value (empty string)
+01/27 12:48:28.308 metplus (config_metplus.py:723) DEBUG: Setting [config] TC_PAIRS_SKIP_TIMES to default value (empty string)
+01/27 12:48:28.308 metplus (config_metplus.py:723) DEBUG: Setting [config] SKIP_TIMES to default value (empty string)
+01/27 12:48:28.309 metplus (config_metplus.py:723) DEBUG: Setting [config] USE_EXPLICIT_NAME_AND_LEVEL to default value (empty string)
+01/27 12:48:28.309 metplus (config_metplus.py:723) DEBUG: Setting [config] TC_PAIRS_MANDATORY to default value (True)
+01/27 12:48:28.309 metplus (config_metplus.py:723) DEBUG: Setting [config] LOG_TC_PAIRS_VERBOSITY to default value (5)
+01/27 12:48:28.313 metplus (config_metplus.py:723) DEBUG: Setting [config] TC_PAIRS_EDECK_INPUT_DIR to default value (empty string)
+01/27 12:48:28.313 metplus (config_metplus.py:723) DEBUG: Setting [config] TC_PAIRS_DESC to default value (empty string)
+01/27 12:48:28.313 metplus (config_metplus.py:723) DEBUG: Setting [config] DESC to default value (empty string)
+01/27 12:48:28.315 metplus (command_builder.py:162) DEBUG: ENVIRONMENT FOR NEXT COMMAND: 
+01/27 12:48:28.315 metplus (command_builder.py:162) DEBUG: BASIN=["ML"]
+01/27 12:48:28.315 metplus (command_builder.py:162) DEBUG: CYCLONE=[]
+01/27 12:48:28.315 metplus (command_builder.py:162) DEBUG: DLAND_FILE=/usr/local/met/share/met/tc_data/dland_global_tenth_degree.nc
+01/27 12:48:28.315 metplus (command_builder.py:162) DEBUG: INIT_BEG=20201207_000000
+01/27 12:48:28.315 metplus (command_builder.py:162) DEBUG: INIT_END=20201214_180000
+01/27 12:48:28.315 metplus (command_builder.py:162) DEBUG: INIT_EXCLUDE=[]
+01/27 12:48:28.315 metplus (command_builder.py:162) DEBUG: INIT_INCLUDE=[]
+01/27 12:48:28.315 metplus (command_builder.py:162) DEBUG: METPLUS_DESC=
+01/27 12:48:28.316 metplus (command_builder.py:162) DEBUG: METPLUS_MODEL=model = [];
+01/27 12:48:28.316 metplus (command_builder.py:162) DEBUG: MET_TMP_DIR=/d1/personal/arbetter/METplus/output/tmp
+01/27 12:48:28.316 metplus (command_builder.py:162) DEBUG: MODEL=[]
+01/27 12:48:28.316 metplus (command_builder.py:162) DEBUG: STORM_ID=[]
+01/27 12:48:28.316 metplus (command_builder.py:162) DEBUG: STORM_NAME=[]
+01/27 12:48:28.316 metplus (command_builder.py:162) DEBUG: VALID_BEG=
+01/27 12:48:28.316 metplus (command_builder.py:162) DEBUG: VALID_END=
+01/27 12:48:28.316 metplus (command_builder.py:162) DEBUG: COPYABLE ENVIRONMENT FOR NEXT COMMAND: 
+01/27 12:48:28.316 metplus (command_builder.py:162) DEBUG: export BASIN="[\"ML\"]"; export CYCLONE="[]"; export DLAND_FILE="/usr/local/met/share/met/tc_data/dland_global_tenth_degree.nc"; export INIT_BEG="20201207_000000"; export INIT_END="20201214_180000"; export INIT_EXCLUDE="[]"; export INIT_INCLUDE="[]"; export METPLUS_DESC=""; export METPLUS_MODEL="model = [];"; export MET_TMP_DIR="/d1/personal/arbetter/METplus/output/tmp"; export MODEL="[]"; export STORM_ID="[]"; export STORM_NAME="[]"; export VALID_BEG=""; export VALID_END=""; 
+01/27 12:48:28.316 metplus (tc_pairs_wrapper.py:493) DEBUG: Looking for BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.*.dat
+01/27 12:48:28.414 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000001.dat
+01/27 12:48:28.415 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:28.505 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:28.506 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000001.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:28.507 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:29.121 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.604136
+01/27 12:48:29.121 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000002.dat
+01/27 12:48:29.121 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:29.212 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:29.213 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000002.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:29.214 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:29.818 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603181
+01/27 12:48:29.818 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000003.dat
+01/27 12:48:29.818 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:29.910 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:29.911 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000003.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:29.912 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:30.516 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603205
+01/27 12:48:30.516 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000004.dat
+01/27 12:48:30.516 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:30.607 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:30.608 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000004.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:30.609 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:31.213 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603193
+01/27 12:48:31.213 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000005.dat
+01/27 12:48:31.213 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:31.304 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:31.305 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000005.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:31.306 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:31.910 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603158
+01/27 12:48:31.910 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000006.dat
+01/27 12:48:31.911 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:32.001 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:32.002 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000006.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:32.003 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:32.607 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603091
+01/27 12:48:32.607 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000007.dat
+01/27 12:48:32.608 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:32.698 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:32.699 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000007.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:32.700 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:33.304 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603101
+01/27 12:48:33.304 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000008.dat
+01/27 12:48:33.304 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:33.395 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:33.396 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000008.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:33.397 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:34.000 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603087
+01/27 12:48:34.001 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000009.dat
+01/27 12:48:34.001 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:34.092 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:34.093 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000009.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:34.094 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:34.697 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603228
+01/27 12:48:34.698 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000010.dat
+01/27 12:48:34.698 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:34.789 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:34.790 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000010.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:34.791 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:35.395 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603130
+01/27 12:48:35.395 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000011.dat
+01/27 12:48:35.396 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:35.487 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:35.488 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000011.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:35.489 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:36.092 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603196
+01/27 12:48:36.093 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000012.dat
+01/27 12:48:36.093 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:36.184 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:36.185 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000012.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:36.186 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:36.790 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603217
+01/27 12:48:36.790 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000013.dat
+01/27 12:48:36.791 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:36.882 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:36.883 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000013.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:36.884 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:37.487 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603112
+01/27 12:48:37.488 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000014.dat
+01/27 12:48:37.488 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:37.579 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:37.579 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000014.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:37.581 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:38.184 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603141
+01/27 12:48:38.184 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000015.dat
+01/27 12:48:38.185 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:38.275 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:38.276 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000015.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:38.277 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:38.881 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603278
+01/27 12:48:38.882 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000016.dat
+01/27 12:48:38.883 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:39.017 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:39.018 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000016.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:39.019 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:39.623 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603165
+01/27 12:48:39.623 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000017.dat
+01/27 12:48:39.623 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:39.714 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:39.715 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000017.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:39.716 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:40.319 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.602944
+01/27 12:48:40.320 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000018.dat
+01/27 12:48:40.320 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:40.410 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:40.411 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000018.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:40.412 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:41.016 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603083
+01/27 12:48:41.016 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000019.dat
+01/27 12:48:41.016 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:41.107 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:41.108 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000019.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:41.109 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:41.713 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603178
+01/27 12:48:41.713 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000020.dat
+01/27 12:48:41.714 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:41.804 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:41.805 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000020.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:41.806 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:42.410 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603160
+01/27 12:48:42.410 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000021.dat
+01/27 12:48:42.411 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:42.501 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:42.502 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000021.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:42.503 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:43.107 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603105
+01/27 12:48:43.107 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000022.dat
+01/27 12:48:43.108 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:43.198 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:43.199 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000022.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:43.200 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:43.804 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603114
+01/27 12:48:43.804 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000023.dat
+01/27 12:48:43.804 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:43.895 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:43.896 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000023.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:43.897 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:44.501 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603171
+01/27 12:48:44.501 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000024.dat
+01/27 12:48:44.501 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:44.592 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:44.593 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000024.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:44.595 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:45.198 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603199
+01/27 12:48:45.199 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000025.dat
+01/27 12:48:45.199 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:45.291 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:45.292 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000025.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:45.293 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:45.896 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603169
+01/27 12:48:45.897 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000026.dat
+01/27 12:48:45.897 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:45.988 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:45.989 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000026.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:45.990 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:46.594 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603166
+01/27 12:48:46.594 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000027.dat
+01/27 12:48:46.594 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:46.685 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:46.686 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000027.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:46.688 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:47.291 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603190
+01/27 12:48:47.292 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000028.dat
+01/27 12:48:47.292 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:47.383 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:47.384 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000028.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:47.385 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:47.989 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603196
+01/27 12:48:47.989 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000029.dat
+01/27 12:48:47.990 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:48.080 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:48.081 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000029.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:48.082 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:48.686 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603187
+01/27 12:48:48.686 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000030.dat
+01/27 12:48:48.687 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:48.778 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:48.778 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000030.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:48.780 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:49.383 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603115
+01/27 12:48:49.383 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000031.dat
+01/27 12:48:49.384 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:49.475 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:49.476 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000031.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:49.477 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:50.081 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603160
+01/27 12:48:50.081 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000032.dat
+01/27 12:48:50.081 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:50.172 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:50.173 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000032.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:50.174 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:50.777 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603158
+01/27 12:48:50.778 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000033.dat
+01/27 12:48:50.778 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:50.869 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:50.870 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000033.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:50.871 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:51.475 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603142
+01/27 12:48:51.475 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000034.dat
+01/27 12:48:51.475 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:51.566 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:51.567 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000034.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:51.568 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:52.171 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603093
+01/27 12:48:52.172 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000035.dat
+01/27 12:48:52.172 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:52.263 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:52.264 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000035.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:52.265 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:52.868 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603270
+01/27 12:48:52.869 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000036.dat
+01/27 12:48:52.869 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:52.961 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:52.961 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000036.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:52.963 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:53.566 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603307
+01/27 12:48:53.567 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000037.dat
+01/27 12:48:53.567 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:53.658 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:53.659 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000037.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:53.660 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:54.264 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603196
+01/27 12:48:54.264 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000038.dat
+01/27 12:48:54.264 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:54.356 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:54.356 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000038.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:54.358 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:54.961 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603281
+01/27 12:48:54.962 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000039.dat
+01/27 12:48:54.963 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:55.105 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:55.106 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000039.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:55.107 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:55.711 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603615
+01/27 12:48:55.712 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000040.dat
+01/27 12:48:55.712 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:55.802 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:55.803 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000040.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:55.804 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:56.407 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.602948
+01/27 12:48:56.408 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000041.dat
+01/27 12:48:56.408 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:56.498 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:56.499 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000041.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:56.500 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:57.104 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603106
+01/27 12:48:57.104 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000042.dat
+01/27 12:48:57.104 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:57.195 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:57.196 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000042.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:57.197 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:57.801 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603209
+01/27 12:48:57.801 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000043.dat
+01/27 12:48:57.801 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:57.892 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:57.893 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000043.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:57.894 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:58.498 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603169
+01/27 12:48:58.498 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000044.dat
+01/27 12:48:58.498 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:58.590 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:58.590 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000044.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:58.592 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:59.195 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603147
+01/27 12:48:59.195 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000045.dat
+01/27 12:48:59.196 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:59.287 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:59.287 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000045.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:59.289 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:48:59.892 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603227
+01/27 12:48:59.893 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000046.dat
+01/27 12:48:59.893 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:48:59.984 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:48:59.984 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000046.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:48:59.986 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:00.589 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603232
+01/27 12:49:00.590 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000047.dat
+01/27 12:49:00.590 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:00.681 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:00.682 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000047.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:00.683 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:01.287 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603194
+01/27 12:49:01.287 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000048.dat
+01/27 12:49:01.287 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:01.378 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:01.379 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000048.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:01.380 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:01.984 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603165
+01/27 12:49:01.984 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000049.dat
+01/27 12:49:01.984 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:02.075 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:02.076 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000049.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:02.077 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:02.681 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603220
+01/27 12:49:02.681 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000050.dat
+01/27 12:49:02.682 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:02.773 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:02.774 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000050.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:02.775 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:03.379 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603217
+01/27 12:49:03.379 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000051.dat
+01/27 12:49:03.379 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:03.470 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:03.471 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000051.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:03.472 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:04.076 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603179
+01/27 12:49:04.076 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000052.dat
+01/27 12:49:04.076 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:04.168 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:04.168 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000052.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:04.170 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:04.773 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603173
+01/27 12:49:04.773 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000053.dat
+01/27 12:49:04.774 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:04.865 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:04.865 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000053.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:04.867 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:05.470 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603185
+01/27 12:49:05.471 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000054.dat
+01/27 12:49:05.471 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:05.564 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:05.565 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000054.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:05.566 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:06.169 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603189
+01/27 12:49:06.170 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000055.dat
+01/27 12:49:06.170 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:06.261 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:06.261 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000055.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:06.262 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:06.866 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603192
+01/27 12:49:06.866 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000056.dat
+01/27 12:49:06.867 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:06.963 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:06.964 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000056.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:06.965 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:07.569 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603142
+01/27 12:49:07.569 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000057.dat
+01/27 12:49:07.570 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:07.660 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:07.661 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000057.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:07.662 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:08.266 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603096
+01/27 12:49:08.266 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000058.dat
+01/27 12:49:08.266 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:08.357 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:08.358 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000058.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:08.359 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:08.963 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603192
+01/27 12:49:08.963 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000059.dat
+01/27 12:49:08.963 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:09.054 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:09.055 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000059.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:09.056 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:09.660 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603202
+01/27 12:49:09.660 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000060.dat
+01/27 12:49:09.661 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:09.752 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:09.753 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000060.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:09.754 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:10.358 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603364
+01/27 12:49:10.358 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000061.dat
+01/27 12:49:10.358 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:10.449 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:10.450 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000061.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:10.451 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:11.055 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603289
+01/27 12:49:11.056 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000062.dat
+01/27 12:49:11.057 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:11.214 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:11.215 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000062.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:11.216 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:11.820 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603209
+01/27 12:49:11.820 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000063.dat
+01/27 12:49:11.821 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:11.911 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:11.911 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000063.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:11.913 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:12.516 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.602982
+01/27 12:49:12.516 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000064.dat
+01/27 12:49:12.517 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:12.607 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:12.607 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000064.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:12.608 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:13.212 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603117
+01/27 12:49:13.212 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000065.dat
+01/27 12:49:13.213 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:13.304 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:13.304 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000065.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:13.306 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:13.909 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603218
+01/27 12:49:13.909 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000066.dat
+01/27 12:49:13.910 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:14.001 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:14.002 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000066.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:14.003 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:14.606 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603201
+01/27 12:49:14.607 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000067.dat
+01/27 12:49:14.607 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:14.698 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:14.699 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000067.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:14.700 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:15.304 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603174
+01/27 12:49:15.304 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000068.dat
+01/27 12:49:15.304 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:15.396 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:15.397 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000068.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:15.398 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:16.001 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603212
+01/27 12:49:16.002 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000069.dat
+01/27 12:49:16.002 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:16.093 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:16.094 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000069.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:16.095 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:16.698 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603207
+01/27 12:49:16.699 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000070.dat
+01/27 12:49:16.699 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:16.790 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:16.791 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000070.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:16.792 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:17.395 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603146
+01/27 12:49:17.396 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000071.dat
+01/27 12:49:17.396 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:17.487 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:17.488 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000071.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:17.489 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:18.092 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603175
+01/27 12:49:18.093 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000072.dat
+01/27 12:49:18.093 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:18.184 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:18.184 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000072.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:18.185 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:18.789 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603206
+01/27 12:49:18.789 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000073.dat
+01/27 12:49:18.790 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:18.881 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:18.882 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000073.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:18.883 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:19.486 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603206
+01/27 12:49:19.487 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000074.dat
+01/27 12:49:19.487 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:19.580 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:19.581 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000074.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:19.582 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:20.186 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603245
+01/27 12:49:20.186 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000075.dat
+01/27 12:49:20.187 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:20.277 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:20.278 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000075.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:20.279 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:20.883 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603204
+01/27 12:49:20.883 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000076.dat
+01/27 12:49:20.883 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:20.974 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:20.974 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000076.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:20.976 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:21.579 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603189
+01/27 12:49:21.580 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000077.dat
+01/27 12:49:21.580 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:21.670 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:21.671 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000077.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:21.672 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:22.276 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603160
+01/27 12:49:22.276 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000078.dat
+01/27 12:49:22.276 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:22.367 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:22.367 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000078.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:22.368 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:22.972 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603201
+01/27 12:49:22.972 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000079.dat
+01/27 12:49:22.973 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:23.063 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:23.064 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000079.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:23.065 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:23.668 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603138
+01/27 12:49:23.669 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000080.dat
+01/27 12:49:23.669 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:23.760 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:23.761 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000080.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:23.762 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:24.365 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603111
+01/27 12:49:24.365 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000081.dat
+01/27 12:49:24.366 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:24.456 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:24.457 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000081.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:24.458 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:25.061 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603171
+01/27 12:49:25.062 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000082.dat
+01/27 12:49:25.062 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:25.153 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:25.154 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000082.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:25.155 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:25.759 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603195
+01/27 12:49:25.759 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000083.dat
+01/27 12:49:25.759 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:25.850 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:25.850 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000083.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:25.852 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:26.455 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603180
+01/27 12:49:26.456 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000084.dat
+01/27 12:49:26.456 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:26.546 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:26.547 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000084.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:26.549 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:27.152 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.603292
+01/27 12:49:27.153 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000085.dat
+01/27 12:49:27.153 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:27.243 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:27.244 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000085.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:27.245 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:28.049 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803486
+01/27 12:49:28.050 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000086.dat
+01/27 12:49:28.051 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:28.210 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:28.211 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000086.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:28.213 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:29.017 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803850
+01/27 12:49:29.018 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000087.dat
+01/27 12:49:29.019 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:29.179 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:29.180 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000087.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:29.182 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:29.986 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803767
+01/27 12:49:29.987 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000088.dat
+01/27 12:49:29.987 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:30.147 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:30.147 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000088.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:30.149 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:30.953 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803871
+01/27 12:49:30.954 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000089.dat
+01/27 12:49:30.955 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:31.113 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:31.114 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000089.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:31.115 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:31.920 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803743
+01/27 12:49:31.920 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000090.dat
+01/27 12:49:31.921 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:32.081 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:32.082 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000090.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:32.084 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:32.888 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803864
+01/27 12:49:32.889 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000091.dat
+01/27 12:49:32.890 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:33.050 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:33.051 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000091.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:33.052 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:33.857 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803807
+01/27 12:49:33.857 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000092.dat
+01/27 12:49:33.858 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:34.018 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:34.019 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000092.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:34.020 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:34.825 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803869
+01/27 12:49:34.825 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000093.dat
+01/27 12:49:34.826 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:34.986 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:34.987 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000093.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:34.988 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:35.793 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803844
+01/27 12:49:35.793 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000094.dat
+01/27 12:49:35.794 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:35.954 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:35.955 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000094.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:35.957 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:36.761 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803840
+01/27 12:49:36.762 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000095.dat
+01/27 12:49:36.763 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:36.922 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:36.923 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000095.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:36.925 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:37.729 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803819
+01/27 12:49:37.730 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000096.dat
+01/27 12:49:37.731 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:37.890 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:37.891 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000096.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:37.893 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:38.697 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803861
+01/27 12:49:38.698 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000097.dat
+01/27 12:49:38.699 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:38.859 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:38.859 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000097.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:38.861 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:39.665 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803808
+01/27 12:49:39.666 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000098.dat
+01/27 12:49:39.667 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:39.826 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:39.827 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000098.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:39.829 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:40.633 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803803
+01/27 12:49:40.634 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000099.dat
+01/27 12:49:40.635 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:40.794 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:40.795 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000099.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:40.796 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:41.601 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803826
+01/27 12:49:41.602 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000100.dat
+01/27 12:49:41.602 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:41.762 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:41.763 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000100.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:41.764 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:42.569 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803797
+01/27 12:49:42.570 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000101.dat
+01/27 12:49:42.570 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:42.731 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:42.732 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000101.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:42.733 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:43.538 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803831
+01/27 12:49:43.538 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000102.dat
+01/27 12:49:43.539 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:43.698 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:43.699 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000102.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:43.701 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:44.505 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803829
+01/27 12:49:44.506 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000103.dat
+01/27 12:49:44.507 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:44.666 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:44.667 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000103.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:44.669 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:45.473 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803825
+01/27 12:49:45.474 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000104.dat
+01/27 12:49:45.474 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:45.634 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:45.635 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000104.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:45.636 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:46.441 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803830
+01/27 12:49:46.442 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000105.dat
+01/27 12:49:46.442 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:46.602 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:46.603 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000105.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:46.605 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:47.409 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803851
+01/27 12:49:47.410 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000106.dat
+01/27 12:49:47.410 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:47.570 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:47.571 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000106.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:47.572 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:48.377 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803822
+01/27 12:49:48.378 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000107.dat
+01/27 12:49:48.378 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:48.539 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:48.539 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000107.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:48.541 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:49.345 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803817
+01/27 12:49:49.346 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000108.dat
+01/27 12:49:49.347 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:49.507 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:49.508 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000108.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:49.509 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:50.314 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803788
+01/27 12:49:50.314 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000109.dat
+01/27 12:49:50.315 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:50.450 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:50.451 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000109.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:50.452 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:51.256 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803624
+01/27 12:49:51.257 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000110.dat
+01/27 12:49:51.258 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:51.418 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:51.419 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000110.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:51.420 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:52.225 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803704
+01/27 12:49:52.225 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000111.dat
+01/27 12:49:52.226 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:52.386 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:52.387 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000111.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:52.388 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:53.193 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803834
+01/27 12:49:53.194 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000112.dat
+01/27 12:49:53.194 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:53.354 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:53.355 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000112.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:53.356 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:54.161 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803832
+01/27 12:49:54.162 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000113.dat
+01/27 12:49:54.162 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:54.322 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:54.323 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000113.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:54.324 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:55.129 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803838
+01/27 12:49:55.129 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000114.dat
+01/27 12:49:55.130 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:55.290 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:55.290 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000114.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:55.292 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:56.096 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803825
+01/27 12:49:56.097 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000115.dat
+01/27 12:49:56.098 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:56.258 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:56.259 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000115.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:56.260 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
+01/27 12:49:57.065 metplus (command_runner.py:186) DEBUG: Finished running /usr/local/met/bin/tc_pairs in 0:00:00.803673
+01/27 12:49:57.065 metplus (tc_pairs_wrapper.py:507) DEBUG: Found BDECK: /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000116.dat
+01/27 12:49:57.066 metplus (tc_pairs_wrapper.py:629) DEBUG: Looking for ADECK file: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.*.dat using template /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.{cyclone?fmt=%s}.dat
+01/27 12:49:57.226 metplus (tc_pairs_wrapper.py:640) DEBUG: Adding ADECK: /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat
+01/27 12:49:57.227 metplus (command_runner.py:90) INFO: COMMAND: /usr/local/met/bin/tc_pairs -v 5 -bdeck /d1/personal/arbetter/2020_storms/bdeck.gfso.atcf_gen.glbl.000116.dat -adeck /d1/personal/arbetter/2020_storms/adeck.gfso.atcf_gen.glbl.005687.dat -config /d1/personal/arbetter/METplus/parm/met_config/TCPairsConfig_wrapped -out /d1/personal/arbetter/METplus/output/tc_pairs/202012/mlq*.gfso.
+01/27 12:49:57.228 metplus (command_runner.py:124) DEBUG: log_name is: tc_pairs, output sent to: /d1/personal/arbetter/METplus/output/logs/master_metplus.log.20210127124826
