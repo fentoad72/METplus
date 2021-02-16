@@ -109,6 +109,13 @@ met_tool_wrapper/GridDiag/GridDiag.conf
 # Keywords
 # --------
 #
+<<<<<<< HEAD
 # .. note:: `GridDiagToolUseCase <https://dtcenter.github.io/METplus/search.html?q=GridDiagToolUseCase&check_keywords=yes&area=default>`_
+=======
+# .. note::
+#
+#  `GridDiagToolUseCase <https://dtcenter.github.io/METplus/search.html?q=GridDiagToolUseCase&check_keywords=yes&area=default>`_, `RuntimeFreqUseCase <https://dtcenter.github.io/METplus/search.html?q=RuntimeFreqUseCase&check_keywords=yes&area=default>`_
+#
+>>>>>>> feature_803_cycloneplotter_line
 #
 # sphinx_gallery_thumbnail_path = '_static/met_tool_wrapper-GridDiag.png'
